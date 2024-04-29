@@ -1,0 +1,33 @@
+2024-04-29T18:11:26.663-04:00  INFO 9056 --- [restartedMain] com.vision.aop.Application               : Starting Application using Java 17.0.10 with PID 9056 (C:\Porjects\localRepo.vision.tech\spring3.0.4j17-aop-advice\spring-aop-advice\target\classes started by user in C:\Porjects\localRepo.vision.tech\spring3.0.4j17-aop-advice\spring-aop-advice)
+2024-04-29T18:11:26.681-04:00  INFO 9056 --- [restartedMain] com.vision.aop.Application               : No active profile set, falling back to 1 default profile: "default"
+2024-04-29T18:11:26.947-04:00  INFO 9056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-29T18:11:26.981-04:00  INFO 9056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-29T18:11:30.205-04:00  INFO 9056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29T18:11:30.303-04:00  INFO 9056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interfaces.
+2024-04-29T18:11:31.478-04:00  INFO 9056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-04-29T18:11:31.498-04:00  INFO 9056 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-29T18:11:31.499-04:00  INFO 9056 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2024-04-29T18:11:31.630-04:00  INFO 9056 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-29T18:11:31.631-04:00  INFO 9056 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4647 ms
+2024-04-29T18:11:31.814-04:00  INFO 9056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-29T18:11:32.172-04:00  INFO 9056 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=SA
+2024-04-29T18:11:32.184-04:00  INFO 9056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-29T18:11:32.212-04:00  INFO 9056 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:userdb'
+2024-04-29T18:11:33.153-04:00  INFO 9056 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-04-29T18:11:34.354-04:00  INFO 9056 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:11:34.892-04:00  WARN 9056 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-29T18:11:35.746-04:00  INFO 9056 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-29T18:11:35.757-04:00  INFO 9056 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-29T18:11:35.928-04:00  INFO 9056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-04-29T18:11:36.010-04:00  INFO 9056 --- [restartedMain] com.vision.aop.Application               : Started Application in 10.296 seconds (process running for 11.888)
+2024-04-29T18:11:36.755-04:00  INFO 9056 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-29T18:11:36.756-04:00  INFO 9056 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-29T18:11:36.759-04:00  INFO 9056 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-04-29T18:15:38.792-04:00  WARN 9056 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.vision.aop.exception.ResourceNotFoundException: Employee not found for this id :: 2]
+2024-04-29T18:16:00.856-04:00  INFO 9056 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-04-29T18:16:00.879-04:00  INFO 9056 --- [RMI TCP Connection(10)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-29T18:16:00.882-04:00  INFO 9056 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-04-29T18:16:00.902-04:00  INFO 9056 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:16:01.322-04:00  WARN 9056 --- [RMI TCP Connection(10)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2024-04-29T18:16:01.326-04:00  INFO 9056 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-29T18:16:01.433-04:00  INFO 9056 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
