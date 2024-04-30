@@ -1,4 +1,4 @@
-package com.vision.springboot2jpacrudexample;
+package com.vision.aop;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

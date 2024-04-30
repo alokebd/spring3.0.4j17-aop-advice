@@ -24,9 +24,10 @@ public class LoggingAspect {
 	@Before("execution(* com.vision.aop.service.EmployeeService.addEmployee(..))")
 	public void logBefore(JoinPoint joinPoint) {
 		log.debug("logBefore running .....");
-		log.debug("Enter: {}() with argument[s] = {}", joinPoint.getSignature().getDeclaringTypeName(),
+		log.info("Enter: {}() with argument[s] = {}", joinPoint.getSignature().getDeclaringTypeName(),
 				joinPoint.getSignature().getName(), Arrays.toString(joinPoint.getArgs()));
 		System.out.println("logBefore running .....");
+		
 		System.out.println("getSignature() type : "+joinPoint.getSignature().getDeclaringTypeName() + ", "
 				+ "name:"+ joinPoint.getSignature().getName()+ ", arg:"+ Arrays.toString(joinPoint.getArgs()));
 		
@@ -36,7 +37,7 @@ public class LoggingAspect {
 	@After("execution(* com.vision.aop.service.EmployeeService.addEmployee(..))")
 	public void logAfter(JoinPoint joinPoint) {
 		log.debug("logAfter running .....");
-		log.debug("Enter: {}() with argument[s] = {}", joinPoint.getSignature().getDeclaringTypeName(),
+		log.info("Enter: {}() with argument[s] = {}", joinPoint.getSignature().getDeclaringTypeName(),
 				joinPoint.getSignature().getName(), Arrays.toString(joinPoint.getArgs()));
 		
 		System.out.println("logAfter running .....");
@@ -48,7 +49,7 @@ public class LoggingAspect {
 	@AfterReturning(pointcut = "execution(* com.vision.aop.service.EmployeeService.deleteEmployee(..))", returning = "result")
 	public void logAfterReturning(JoinPoint joinPoint, Object result) {
 		log.debug("logAfterReturning running .....");
-		log.debug("Enter: {}() with argument[s] = {}", joinPoint.getSignature().getDeclaringTypeName(),
+		log.info("Enter: {}() with argument[s] = {}", joinPoint.getSignature().getDeclaringTypeName(),
 				joinPoint.getSignature().getName(), Arrays.toString(joinPoint.getArgs()));
 		
 		System.out.println("logAfterReturning running .....");
@@ -86,7 +87,7 @@ public class LoggingAspect {
 		try {
 			Object result = joinPoint.proceed();
 			if (log.isDebugEnabled()) {
-				log.debug("Exit: {}.{}() with result = {}", joinPoint.getSignature().getDeclaringTypeName(),
+				log.info("Exit: {}.{}() with result = {}", joinPoint.getSignature().getDeclaringTypeName(),
 						joinPoint.getSignature().getName(), result);
 				
 				System.out.println("logAround() type : "+joinPoint.getSignature().getDeclaringTypeName() + ", "
